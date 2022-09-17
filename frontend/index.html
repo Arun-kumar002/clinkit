@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./blink.css">
+    <!-- <link rel="stylesheet" href="./cart.css"> -->
+</head>
+
+<body>
+    <article class="maincontent">
+
+        <!-- todo nav bar starts here------------------------->
+        <section id="navblock">
+            <article>
+                <aside class="logo">Clink<span>it</span></aside>
+                <aside class="delivery">Location<p>Karntaka, Bengaluru.......</p>
+                </aside>
+                <aside class="searchbar"><input type="text" id="search" placeholder="Search for products....">
+                    <i class="fas fa-search"></i>
+                </aside>
+                <aside class="signupbtn">Signup</aside>
+                <aside class="logoutbtn">Login</aside>
+                <button class="cartbtn"><i class="fas fa-shopping-cart"></i>
+                    <p>My Cart</p>
+                    <h3 class="cart-count">0</h3>
+                </button>
+            </article>
+        </section>
+        <main class="cartmodule" style="display: none">
+            <section class="cartbox">
+                <div class="cartdata" id="cartdata"></div>
+                <div class="pricetag">Total Price : <span class="price"> </span> /-</div>
+            </section>
+        </main>
+
+        <!-- todo nav bar starts ends-->
+
+        <!-- todod list starts here --------------------------------->
+
+        <section id="listblock">
+            <article>
+                <ul class="lists">
+                    <li>Smartphones</li>
+                    <li>Laptops</li>
+                    <li>Fragrances</li>
+                    <li>Skincare</li>
+                    <li>Groceries</li>
+                    <li>Home-Decoration</li>
+                </ul>
+            </article>
+        </section>
+        <!-- todo list ends here -->
+
+        <!-- todo products block starts here ------------------------->
+
+        <section class="rightbar">
+            <article class="page">
+
+            </article>
+        </section>
+        <!-- todo products block ends here -->
+
+        <!-- todo loction block starts here -->
+        <section class="popup">
+        <article>
+            <h3>Welcome to <span>Clinkit</span></h3>
+            <div><i class="fa-solid fa-location-dot"></i>Please provide your delivery location to see products at nearby store</div>
+            <div class="div">
+            <button id="btn">Detect my location</button>
+            <p>OR</p>
+            <input class='div2' type="text" placeholder="Enter City Name" />
+            </div>
+        </article>
+    </section>
+        <!-- todo loction block ends here -->
+
+        <!-- todo form logup starts here ------------------------->
+        <section id="model">
+            <article id="model_container">
+                <div class="heading">Enter the Details Below</div>
+                <aside>
+                    <form action="" method="get" autocomplete="on">
+                        <input type="text" name="username" id="username" placeholder="User Name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="password" name="password" id="password" placeholder="Password">
+                        <input type="password" name="confirmpassword" id="conformpassword"
+                            placeholder="Conform Password">
+                        <input type="tel" name="phoneno" id="phoneno" placeholder="Phone Number">
+                        <input type="submit" value="Next" id="SignUp">
+                    </form>
+                </aside>
+            </article>
+            <aside class="singclose">x</aside>
+        </section>
+        <!-- todo form logup ends here -->
+
+        <!-- todo otp verification starts here-->
+
+        <section class="otpblock">
+            <article>
+                <aside class="back">
+                    <div>x</div>
+                    <h1>Phone Number Verification</h1>
+                </aside>
+                <aside class="veri">
+                    <h1>Enter 4 digit code sent to your phone Number </h1>
+                    <input type="text" id="otp" placeholder="Enter the otp received....">
+                    <button>Next</button>
+                </aside>
+            </article>
+        </section>
+
+        <!-- todo otp verification ends here -->
+
+        <!-- todo login starts section ---------------------------------->
+        <section id="login_section">
+            <article>
+                <div class="heading">Enter the Login Details</div>
+                <aside>
+                    <form action="#" id="login_form">
+                        <p class="wrongwarning"></p>
+                        <input type="tel" name="phoneno" id="login_phonono" placeholder="Mobile Number">
+                        <input type="password" id="login_password" placeholder="Password">
+                        <button type='submit' id="login_section_login">login</button>
+                    </form>
+                </aside>
+            </article>
+            <aside class="close">x</aside>
+        </section>
+    </article>
+    <!-- todo login end here -->
+
+    <!-- todo otp verifi -->
+
+    <script src="./blink.js"></script>
+    <script src="./popup.js"></script>
+    <script src="./form.js"></script>
+    <script src="./cart.js"></script>
+</body>
+
+</html>

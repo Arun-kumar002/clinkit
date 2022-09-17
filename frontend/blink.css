@@ -1,0 +1,755 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    position: relative;
+}
+
+
+
+.cartmodule {
+    position: relative;
+    /* border: 1px solid black; */
+    background-color: none;
+
+}
+
+.cartbox {
+    width: 20%;
+    height: 88.8vh;
+    background: #efefef;
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 2px 1px #efefef;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.cartbox {
+    /* margin-top: 50px; */
+    background-color: none;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* border: 1px solid black; */
+}
+
+.cartt{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 0px 2px 2px #efefef;
+}
+
+.cartt img{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 2px;
+}
+
+.cartt p{
+    font-size: 14px;
+    padding-left: 15px;
+    font-weight: 400;
+}
+
+.cartt p span{
+    font-size: 16px;
+}
+
+.cartt button{
+    margin: 15px 30px;
+    padding: 8px 12px;
+    border-bottom: none;
+    background-color: royalblue;
+    /* border: 1px solid royalblue; */
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;    /* place-content: center; */
+    /* margin: 0 auto; */
+}
+
+.cartt button:hover{
+    background-color: crimson;
+    outline: none;
+    color: white;
+    /* border: 1px solid crimson; */
+}
+
+
+#cartdata{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    /* border: 1px solid black; */
+}
+
+.pricetag{
+    font-size: 18px;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* position: sticky; */
+}
+
+
+
+
+
+/* todo navbar starts here */
+
+#navblock {
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 2px lightgray;
+    /* position: relative; */
+}
+
+#navblock article {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+#navblock article .logo {
+    width: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 40px;
+    color: rgb(248, 203, 70);
+    ;
+    font-weight: 700;
+    /* border: 1px solid rebeccapurple; */
+}
+
+#navblock article .logo span {
+    color: rgb(84, 178, 38);
+}
+
+#navblock article .delivery {
+    /* border: 1px solid black; */
+    width: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 19px;
+    height: 100%;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#navblock article .delivery p {
+    font-size: 13px;
+    margin-top: 7px;
+    color: #555;
+}
+
+
+#navblock article .searchbar {
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+#navblock article .searchbar input {
+    /* padding: 10px; */
+    width: 95%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px 1px lightgray;
+    height: 60%;
+    padding: 10px;
+    color: #888;
+    cursor: pointer;
+}
+
+#navblock article .searchbar i {
+    position: absolute;
+    top: 32px;
+    right: 30px;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+}
+
+#navblock article .signupbtn {
+    width: 5%;
+    /* border: 1px solid black; */
+    color: #222;
+    cursor: pointer;
+}
+
+#navblock article .signupbtn:hover {
+    color: royalblue;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#navblock article .logoutbtn {
+    /* border: 1px solid black; */
+    width: 5%;
+    color: #222;
+    cursor: pointer;
+    color: crimson;
+    /* font-size: 20px; */
+
+}
+
+
+#navblock article .logoutbtn:hover {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    color: royalblue;
+
+}
+
+#navblock article .cartbtn {
+    width: 10%;
+    background-color: rgb(12, 131, 31);
+    height: 60%;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#navblock article .cartbtn i {
+    font-size: 20px;
+}
+
+#navblock article .cartbtn p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* todo navbar ends here -------------------------------------*/
+
+/* todo list starts here */
+
+#listblock {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+    /* box-shadow: 1px 1px 5px 1px lightgray; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#listblock article {
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+#listblock article ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#listblock article ul li {
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #222;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+#listblock article ul li:hover {
+    background-color: #efefef;
+}
+
+
+/* todo list starts ends ------------------------------------------*/
+
+/* todo product block starts here */
+
+.rightbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightbar .page {
+    width: 95%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.rightbar .page .grid {
+    box-shadow: 0px 0px 2px 1px rgb(221, 218, 218);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 450px;
+    padding: 1px;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+.rightbar .page .image {
+    width: 100%;
+}
+
+.rightbar .page .image h1 {
+    text-align: center;
+    margin: 5px;
+}
+
+.rightbar .page .image img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px 1px rgb(221, 218, 218);
+
+}
+
+.rightbar .page p {
+    color: #333;
+    font-size: 15px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.rightbar .page button {
+    width: 30%;
+    height: 10%;
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+    border-radius: 8px;
+    float: right;
+    margin: 0 auto;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+}
+
+.rightbar .page button:hover {
+    background-color: #efefef;
+    color: black;
+    font-size: 18px;
+    /* height: 11%; */
+    width: 31%;
+}
+
+.rightbar .page .grid h4 {
+    padding-left: 10px;
+    font-size: 13px;
+    color: #333;
+}
+
+.rightbar .page .grid h4 span{
+    font-size:18px;
+    padding-left:15px;
+    margin-top: 30px;
+}
+
+/* todo product block ends here ---------------------*/
+
+/* todo popup block starts here */
+
+.popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.popup article {
+    padding: 20px;
+    width: 55%;
+    height: 7%;
+    border: 1px solid white;
+    background-color: #efefef;
+    margin: 100px;
+    border-radius: 20px;
+}
+
+.popup article h3 {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.popup article div {
+    text-align: center;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.popup article div i {
+    font-size: 40px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.popup article .div {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.popup article #btn {
+    background-color: green;
+    border: none;
+    padding: 10px;
+    margin: 10px 30px;
+    color: white;
+    width: 20%;
+    cursor: pointer;
+}
+
+.popup article .div input {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    margin: 10px 30px;
+    color: #777;
+    width: 30%;
+    outline: none;
+    cursor: pointer;
+}
+
+.popup article .div p {
+    border: 1px solid #777;
+    border-radius: 100%;
+    padding: 5px;
+    height: 20%;
+    background-color: white;
+    margin: 10px 0px;
+    color: #777;
+}
+
+/* todo popup block ends here ------------------------------------------------*/
+
+
+/* todo form css start here --------------------------------------------------*/
+#model {
+    width: 100%;
+    height: 100vh;
+    /* align-items: flex-start; */
+    display: none;
+    padding-top: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+}
+
+#model #model_container {
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 2px 2px #efefef;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+
+#model #model_container .heading,  #login_section article .heading{
+    height: 20%;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #efefef;
+    background-color: whitesmoke;
+    font-size: 33px;
+    font-weight: 200;
+    width: 100%;
+    color: #888;
+}
+
+#model #model_container aside, #login_section article aside{
+    width: 100%;
+    height: 80%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#model #model_container form,  #login_section article aside form{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* height: 90%; */
+}
+
+/* #model #model_container form {} */
+
+#model #model_container form input,  #login_section article aside form input{
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: white;
+    width: 90%;
+    /* border: none; */
+    color: black;
+    letter-spacing: 1px;
+    font-size: 13px;
+    border: 1px solid #999;
+    font-style: italic;
+}
+
+#model #model_container form #SignUp,  #login_section article form button{
+    background-color: whitesmoke;
+    color: #777;
+    letter-spacing: 2px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#model #model_container form #SignUp:hover {
+    background-color: lightpink;
+    color: black;
+    /* border: 1px solid black; */
+}
+
+#login_section article form button:hover{
+    background-color: lightpink;
+    color: black;
+    /* border: 1px solid black; */
+}
+
+/* todod from logup ends here------------------------------------------- */
+
+/* todo form login starts here ---------------------------------------- */
+
+#login_section {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    display: none;
+    padding-top: 50px;
+
+}
+
+#login_section article {
+    width: 40%;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ .close, .singclose{
+    font-size: 50px;
+    padding-left: 10px;
+    width: 5%;
+    color: white;
+    text-shadow: 1px 1px 1px black;   
+    cursor: pointer;
+}
+
+.validinput{
+    background-color: lightpink;
+    color: black;
+}
+
+/* todo form login ends here=------------------------------------------- */
+
+/* todo otp css starts here------------------------------- */
+
+.otpblock{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.otpblock article{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 2px 2px #efefef;
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+
+}
+
+.otpblock article .back{
+    width: 100%;
+    height: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    border: 1px solid #efefef;
+    background-color: whitesmoke;
+}
+
+.otpblock article .back div{
+    font-size: 10px;
+    padding: 5px;
+    /* background-color: lightpink; */
+    width: 5%;
+    font-size: 20px;
+    height: 40%;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #888;
+}
+
+.otpblock article .back div:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.otpblock article .back h1{
+    font-size: 35px;
+    font-weight: 200;
+    width: 100%;
+    text-align: center;
+    height: 70%;
+    color: #888;
+}
+
+.otpblock article .veri{
+    width:100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.otpblock article .veri h1{
+    width: 100%;
+    height: 30%;
+    font-size: 28px;
+    font-weight: 100;
+    color: #555;
+}
+
+.otpblock article .veri input{
+    width: 50%;
+    height: 25%;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+}
+
+.otpblock article .veri button{
+    width: 50%;
+    height: 20%;
+    border-radius: 10px;
+    border: none;
+    background-color: whitesmoke;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #888;
+}
+
+.otpblock article .veri button:hover{
+    background-color: lightpink;
+    color: #222;
+}
+/* todo otp css ends here */
